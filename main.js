@@ -19,8 +19,8 @@ const todos =[
 const todoJSON = JSON.stringify(todos);
 console.log(todoJSON);
 //for
-for(let i = 0; i< todos.length; i++ ){
-    console.log(todos[i].text);
+for(let todo of todos){
+    console.log(todo.id);
 }
 
 
