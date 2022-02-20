@@ -1,27 +1,7 @@
-const todos =[
-    {
-        id: 1,
-        text: 'Take out Trash',
-        iscompleted: true
-    },
-    {
-        id: 2,
-        text: 'Meeting with boss',
-        iscompleted: true
-    },
-    {
-        id: 3,
-        text: 'Dentist appt',
-        iscompleted: false
-    }
-];
+//conditionals
+const x = 6;
+const y = 11;
 
-// foreach, map, filter
-
-
-const todoiscompleted = todos.filter(function(todo){
-    return todo.iscompleted === true;
-}).map(function(todo){
-    return todo.text;
-}) 
-console.log(todoiscompleted);
+if(x > 5 && y>10) {
+    console.log('x is more than 5 or y is more than 10');
+};
