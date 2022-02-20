@@ -12,16 +12,23 @@ const todos =[
     {
         id: 3,
         text: 'Dentist appt',
-        iscompleted: true
+        iscompleted: false
     }
 ];
 
-const todoJSON = JSON.stringify(todos);
-console.log(todoJSON);
-//for
-for(let todo of todos){
-    console.log(todo.id);
-}
+// foreach, map, filter
+todos.forEach(function(todo) {
+    console.log(todo.text);
+    });
 
 
+const todoText = todos.map(function(todo){
+    return todo.text;
+});
 
+console.log(todoText);
+
+const todoiscompleted = todos.filter(function(todo){
+    return todo.iscompleted === true;
+}) ; 
+console.log(todoiscompleted);
